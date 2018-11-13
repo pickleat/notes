@@ -21,3 +21,8 @@ function hello() {
     document.querySelector('h1').innerHTML = 'Goodbye';
 }
 </script>
+
+**Query Selector**
+* document.querySelector('tag')
+* document.querySelector('#id')
+* document.querySelector('.class')
