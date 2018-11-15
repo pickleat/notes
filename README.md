@@ -6,6 +6,4 @@ I am using this repository for all the notes on the programming classes I am tak
 
 I've taken others, and copious notes, but I'll have to convert them from GoogleDocs 😬
 
-### CS50 Web Programming with Python and Javascript
-
-[Notes](https://github.com/pickleat/notes/blob/master/CS50webnotes.md)
+### [CS50 Web Programming with Python and Javascript](https://github.com/pickleat/notes/blob/master/CS50webnotes.md)
