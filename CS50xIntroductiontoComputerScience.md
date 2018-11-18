@@ -30,9 +30,11 @@ for (int i = 0; i < 50; i++) give me an integer “i” and initialize it at 0, 
 {
      printf(“hello, world”);  print out hello
 }
-}```
-* Easiest way to compile a program “make _program name_”
-* Data types: 
+}
+```
+
+* Easiest way to compile a program ```make _program name_```
+* Data types:
     * Ints = integers, real numbers (no decimal points)
     * String = string of characters (letters)
     * Floats = floating point integers; put .#of decimals after the %i to get a specific number of decimals .10 would give you 10 digits. 
@@ -51,10 +53,12 @@ for (int i = 0; i < 50; i++) give me an integer “i” and initialize it at 0, 
 * Creating a function
     * ```return``` is what you want to give back when the function completes. 
 ``` c
+
 int square(int n)
 {
 	return n * n;
 }
+
 ```
 
 * Preview
