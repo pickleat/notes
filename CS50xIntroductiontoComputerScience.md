@@ -30,7 +30,6 @@ for (int i = 0; i < 50; i++) give me an integer “i” and initialize it at 0, 
 {
      printf(“hello, world”);  print out hello
 }
-}
 ```
 
 * Easiest way to compile a program ```make _program name_```
