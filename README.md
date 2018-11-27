@@ -16,3 +16,7 @@ I've taken others, and copious notes, but I'll have to convert them from GoogleD
 ## FreeCodeCamp
 
 ### [Data Visualization](https://github.com/pickleat/notes/blob/master/DataVisualizationNotes.md)
+
+## Traversy Media
+
+### [JS-DOM-CrashCourse](https://github.com/pickleat/notes/blob/master/JavaScriptDOMCrashCourse-TraversyMedia.md)
