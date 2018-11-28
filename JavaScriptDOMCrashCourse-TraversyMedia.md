@@ -82,7 +82,7 @@
         var h1 = document.querySelector('header h1'); // more common, but these exist in the html doc in the example
         container.insertBefore(newDiv, h1); // uses the var 'container' and the method 'insertBefore()' which takes 2 params to insert the new div, with the var h1.
     ```
-
+    - There are also ```removeChild(varName)``` and ```removeParent(varName)``` which remove elements.
 ### [Part 3](https://www.youtube.com/watch?v=wK2cBMcDTss&list=PLillGF-RfqbYE6Ik_EuXA2iZFcE082B3s&index=3)
 > Code for this [Video](https://www.youtube.com/redirect?redir_token=WWyqJgFlo5eAajTvh8FewRCzao98MTU0MzQyMjg2N0AxNTQzMzM2NDY3&q=http%3A%2F%2Fwww.traversymedia.com%2Fdownloads%2Fdomcrashcourse3.zip&event=video_description&v=wK2cBMcDTss)
 
@@ -111,4 +111,28 @@
     - ```mouseenter```/ ```mouseleave```
     - ```mouseover``` / ```mouseout``` Slightly different than above, but similar
     - ```mousemove``` any time a mouse is moving inside the selected element.
-    - stopped at 19:53
+    - ```keydown``` / ```keyup``` / ```keypress```
+    - focus / blur
+        - ```focus``` is when you click inside an element. ```blur``` is when you leave/click outside an element.
+    - cut / paste
+        - you can actually make things happen when a user cuts or pastes something somewhere.
+    - ```input``` can be used for an input field.
+    - ```change``` if you want to track if a change occurs.
+    -  making a function like above with ```console.log(e.type);``` will tell you the type of event occuring.
+    - ```console.log(e.target.value);``` will output the value(s) of target.
+    - ```submit``` <-- this is more complex
+        - if you want to add a ```var.eventListener('submit', functionname)``` inside your function you'll need to add a ```preventDefault``` funtion to stop it. Like so:
+        ``` js
+        var.addEventListener('submit', functionToRun);
+
+        function functionToRun(e) {
+            e.preventDefault();
+            console.log('event type: '+e.type);
+        }
+
+### [Part 4](https://www.youtube.com/watch?v=i37KVt_IcXw&index=4&list=PLillGF-RfqbYE6Ik_EuXA2iZFcE082B3s)
+In this part, the video runs through a quick web app to build a todo list type.
+
+- Here's the final project he created on [Code-Pen](https://codepen.io/bradtraversy/pen/Bwapow)
+- Goes through how to complete a nice little todo list type application
+- Further study or more complex app would be to add localStorage, which he suggests. But it isn't something covered, but a suggestion.
