@@ -4,7 +4,7 @@
 
 > Code for the video [Download](https://www.youtube.com/redirect?q=http%3A%2F%2Fwww.traversymedia.com%2Fdownloads%2Fdomcrashcourse1.zip&redir_token=C1hY8c7caGA0J903SClpt5YZstR8MTU0MzM2ODAwNEAxNTQzMjgxNjA0&event=video_description&v=0ik6X4DJKCc)
 
-> Note before. He doesn't ever mention where to put the link to your JavaScript doc. It must be BELOW everything at the bottom of the page, otherwise, the javascript will run BEFORE it actually sees any of the elements and return ```null```. So before you close the final ```</html>``` add your ```<script src="fileName.js"></script>``` so your javascript will work correctly. 
+> Note before. He doesn't ever mention where to put the link to your JavaScript doc. It must be BELOW everything at the bottom of the page, otherwise, the javascript will run BEFORE it actually sees any of the elements and return ```null```. So before you close the final ```</html>``` add your ```<script src="fileName.js"></script>``` so your javascript will work correctly.
 
 - What is the DOM?
     - Document Object Model
