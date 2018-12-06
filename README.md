@@ -15,8 +15,18 @@ I've taken others, and copious notes, but I'll have to convert them from GoogleD
 
 ## FreeCodeCamp
 
+### [Responsive Web Design](https://github.com/pickleat/notes/blob/master/ResponsiveWebDesign.md)
+- [ ] Basic HTML and HTML5
+- [ ] Basic CSS
+- [ ] Applied Visual Design
+- [ ] Applied Accessibility
+- [4/4] Responsive Web Design Principles
+- [ ] CSS Flexbox
+- [ ] CSS Grid
+- [ ] Responsive Web Design Projects
+
 ### [Data Visualization](https://github.com/pickleat/notes/blob/master/DataVisualizationNotes.md)
 
 ## Traversy Media
 
-### [JS-DOM-CrashCourse](https://github.com/pickleat/notes/blob/master/JavaScriptDOMCrashCourse-TraversyMedia.md)
+### [JS DOM CrashCourse](https://github.com/pickleat/notes/blob/master/JavaScriptDOMCrashCourse-TraversyMedia.md)
