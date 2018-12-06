@@ -1,11 +1,11 @@
 # Notes
 
-I am using this repository for all the notes on the programming classes I am taking. Because there are many code snippets and other things of that nature, it will allow me to keep my notes better formatted. Feel free to read, but they are mostly stream of consciousness so I'm not sure how useful they'll be to another person. 
+This keeps track of all the progress and notes on the classes I take. Because there are many code snippets and other things of that nature, it will allow me to keep my notes better formatted.
 
-I've taken others, and copious notes, but I'll have to convert them from GoogleDocs 😬
 ## MITx
 
 ### [600.1x Introduction to Computer Science and Programming using Python]()
+[Certificate](https://courses.edx.org/certificates/a1125794c0da482480daf407490f3b28)
 
 ## CS50x
 
@@ -32,3 +32,4 @@ I've taken others, and copious notes, but I'll have to convert them from GoogleD
 ## Traversy Media
 
 ### [JS DOM CrashCourse](https://github.com/pickleat/notes/blob/master/JavaScriptDOMCrashCourse-TraversyMedia.md)
+- Finished the Course
