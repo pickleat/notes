@@ -20,7 +20,7 @@ I've taken others, and copious notes, but I'll have to convert them from GoogleD
 - [ ] Basic CSS
 - [ ] Applied Visual Design
 - [ ] Applied Accessibility
-- [4/4] Responsive Web Design Principles
+[4/4] Responsive Web Design Principles
 - [ ] CSS Flexbox
 - [ ] CSS Grid
 - [ ] Responsive Web Design Projects
