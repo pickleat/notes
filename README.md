@@ -33,3 +33,7 @@ This keeps track of all the progress and notes on the classes I take. Because th
 
 ### [JS DOM CrashCourse](https://github.com/pickleat/notes/blob/master/JavaScriptDOMCrashCourse-TraversyMedia.md)
 - Finished the Course
+
+### [Node.js 8 The Right Way](https://github.com/pickleat/notes/blob/master/nodeJS8TheRightWay/nodeJS8TheRightWay.md))
+- [x] 1. Getting Started
+- [x] 2. Wrangling the File System
