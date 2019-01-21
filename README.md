@@ -17,9 +17,9 @@ This keeps track of all the progress and notes on the classes I take. Because th
 
 ### [Responsive Web Design](https://github.com/pickleat/notes/blob/master/ResponsiveWebDesign.md)
 - [27/27] Basic HTML and HTML5
-- [43/44] Basic CSS
+- [44/44] Basic CSS
 - [52/52] Applied Visual Design
-- [15/22] Applied Accessibility
+- [22/22] Applied Accessibility
 - [4/4] Responsive Web Design Principles
 - [0/17] CSS Flexbox
 - [22/22] CSS Grid
