@@ -46,190 +46,249 @@
     2. Inline style: ```<h2 style=”color:blue;”>CatPhotoApp</h2>```
         - You can place CSS rules within a style in an HTML document.
         - At the top of the code  place a style block like this
-<style>
-h2 {color: red;}
-</style>
+      ```html 
+        <style>
+        h2 {color: red;}
+        </style>
+      ```
 
+- Finally (and most common) is an external style sheet, while referencing the sheet in the HTML document. 
+  - Pros for this: keeps HTML and CSS documents separate, also improves readability of your code. 
+  - The idea behind CSS is that you use a selector to target an HTML element in the DOM (Document Object Model) and then apply a variety of attributes to that element to change the way it is displayed on the page. 
 
-Finally (and most common) is an external style sheet, while referencing the sheet in the HTML document. 
-Pros for this: keeps HTML and CSS documents separate, also improves readability of your code. 
-The idea behind CSS is that you use a selector to target an HTML element in the DOM (Document Object Model) and then apply a variety of attributes to that element to change the way it is displayed on the page. 
-Changing colors:
-Insert into the element after the name (e.g. regular <h2> CatPhotoApp </h2> becomes <h2 style=”color:blue;”>CatPhotoApp</h2> (this is an example of styling with inline CSS)
-Use CSS Selectors to Style Elements:
-There are hundreds of properties that you can use to change the way an element looks on your page. 
-At the top of the code  place a style block like this
-<style>
-h2 {color: red;}
-</style>
-Use CSS Class to Style and Element
-Create a class by declaring it with a name and defining what it does like this:
-Declare it:
-<style>
-     .blue-text {
-            color: blue;
-     }
-</style>
-Then apply  it like so:
-<h2 class=”blue-text”>CatPhotoApp</h2>
-Note that in the declaration the class name starts with a period, but in the application you don’t use a period. 
-Style multiple elements with a CSS class
-Simply add the class=”class-title” inside the opening < >
-Change the font size of an element
-Font size is controlled by the font-size CSS property like this:
-h1 {
-  font-size: 30px;
-} 
-Inside the same <style> tag
-Fonts
-Set the Font Family of an Element
-You can set a font family by using the font-family property. 
-For example: 
-h2 {
-  font-family: sans-serif;
-}
-Import a Google Font
-Google Fonts is a free library of web fonts you can use by referencing the fonts URL. 
-Start by adding the link above the opening style element like so:
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> 
-This references the URL of the font, gives it a family name and where it is a related, and the type. If you are importing a Google font, it will give you all of this generated in its link. 
-Family names are case-sensitive and need to be wrapped in quotes. 
-Apply the font to specific elements by then adding the font name in the style sheet like so:
-h2 {
-   font-family: Lobster; 
-}
-Degrading Fonts or Font Family deferrals 
-In the event a font may not be available, you can specify the font that a site should defer to. These are called “generic fonts.” They are not case-sensitive because they are CSS keywords. 
-Monospace, serif, and sans-serif are examples of these. 
-You add a degrading font after a common of the font you are wanting to upload like this: 
-p {
-  font-family: Helvetica, sans-serif;
-}
-Sizing Images
-CSS has a property called width that controls just that, the width. You’ll use px to specify the width. 
-For example, creating a CSS class called larger-image that gave HTML Elements a width of 500 pixels you’d write this: 
-<style>
-  .larger-image {
-    width: 500px;
+- Changing colors:
+    - Insert into the element after the name (e.g. regular <h2> CatPhotoApp </h2> becomes <h2 style=”color:blue;”>CatPhotoApp</h2> (this is an example of styling with inline CSS)
+
+- Use CSS Selectors to Style Elements:
+  - There are hundreds of properties that you can use to change the way an element looks on your page. 
+  - At the top of the code  place a style block like this:
+  ```html
+  <style>
+  h2 {color: red;}
+  </style>
+  ```
+
+- Use CSS Class to Style and Element
+  - Create a class by declaring it with a name and defining what it does like this:
+    - Declare it:
+    ```html
+    <style>
+      .blue-text {
+        color: blue;
+      }
+    </style>
+    ```
+    - Then apply it like so:
+    ```html 
+    <h2 class=”blue-text”>CatPhotoApp</h2>
+    ```
+    - Note that in the declaration the class name starts with a period, but in the application you don’t use a period.
+
+- Style multiple elements with a CSS class
+  - Simply add the ```class=”class-title”``` inside the opening ```< >```
+
+- Change the font size of an element
+  - Font size is controlled by the font-size CSS property like this:
+  ```css
+  h1 {
+    font-size: 30px;
   }
-</style>
-When you when you use the class put it at the end of the href src URL like so: 
-<a href="#"> <img src="https://bit.ly/fcc-relaxing-cat" class="smaller-image" alt="A cute orange cat lying on its back." ></a>
-Borders around Elements
-You can add borders around elements, and there are three properties: style, color, and width. 
-Example style declaration
-<style>
+  ```
+  Inside the same ```<style>``` tag
+
+- Fonts
+  - Set the Font Family of an Element
+  - You can set a font family by using the font-family property.
+  - For example:
+  ```css  
+  h2 {
+    font-family: sans-serif;
+  }
+  ```
+
+- Import a Google Font
+  - Google Fonts is a free library of web fonts you can use by referencing the fonts URL.
+  - Start by adding the link above the opening style element like so:
+  ```html
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> 
+  ```
+  - This references the URL of the font, gives it a family name and where it is a related, and the type. If you are importing a Google font, it will give you all of this generated in its link. 
+  - Family names are case-sensitive and need to be wrapped in quotes. 
+  - Apply the font to specific elements by then adding the font name in the style sheet like so:
+  ```css
+  h2 {
+    font-family: Lobster;
+  }```
+- Degrading Fonts or Font Family deferrals 
+  - In the event a font may not be available, you can specify the font that a site should defer to. These are called “generic fonts.” They are not case-sensitive because they are CSS keywords.
+  ```Monospace```, ```serif```, and ```sans-serif``` are examples of these.
+  - You add a degrading font after a common of the font you are wanting to upload like this:
+  ```css
+  p {
+    font-family: Helvetica, sans-serif;
+  }
+  ```
+
+- Sizing Images
+  - CSS has a property called width that controls just that, the width. You’ll use px to specify the width.
+  - For example, creating a CSS class called larger-image that gave HTML Elements a width of 500 pixels you’d write this:
+  ```html 
+  <style>
+    .larger-image {
+      width: 500px;
+    }
+  </style>
+  ```
+  - When you when you use the class put it at the end of the href src URL like so:
+  ```html 
+  <a href="#"> <img src="https://bit.ly/fcc-relaxing-cat" class="smaller-image" alt="A cute orange cat lying on its back." ></a>
+  ```
+
+- Borders around Elements
+  - You can add borders around elements, and there are three properties: style, color, and width.
+  - Example style declaration:
+  ```html 
+  <style>
   .thin-red-border {
     border-color: red;
     border-width: 5px;
     border-style: solid;
   }
-</style>. 
-Reminder: when applying multiple classes, put them in the same “ “ and separate with a space like so: 
-<a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back." ></a>
-You can also, round the corners of an image with a CSS property called: border-radius. This goes inside the <style> sheet
-It can either go with the image width definition or the border definition like this 
- .thick-green-border {
+  </style>
+  ```
+  - Reminder: when applying multiple classes, put them in the same “ “ and separate with a space like so:
+  ```html
+  <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back." ></a>
+  ```
+  - You can also, round the corners of an image with a CSS property called: ```border-radius```. This goes inside the stylesheet
+  - It can either go with the image width definition or the border definition like this:
+  ```css
+  .thick-green-border {
    border-color: green;
    border-width: 10px;
    border-style: solid;
    border-radius: 10px;
- }
-Make an image circular with border-radius by using a percentage.
-Same as above, with a small excpetion
- border-radius: 50%;
-Give a background color to a div element
-Set an element’s background color with the background-color property. 
-For example:
-.green-background {
-  background-color: green;
-}.
-Set the id of an element
-In addition to classes, each HTML element can also have an id attribute. 
-Benefits of id attributes.
-Use an id to style a single element and later you’ll find that you can use them to select and modify specific elements with JavaScript.
-id attributes should be unique. Browsers won’t enforce this, but it is a widely agreed upon best practice. Tl:dr don’t give more than one element the same id attribute. 
-Example: <h2 id="cat-photo-app">.
-Use an id attribute to style an element. 
-Cool thing about id attributes is that you can style them, like classes. 
-However an id is not reusable and should only be applied to on element. An id also has a higher specificity (importance) than a class so if both are applied to the same element and have conflicting styles, the id attribute will be applied. 
-Tl:dr id attribute override classes that also apply. 
-Classes are always references with the “.” before it, an id attribute similarly always has a “#” 
-Padding, Margins and Borders
-padding: controls the amount of space between the elements content and its border. 
-You can control four individual sides padding with the padding-top, padding-right, padding-bottom, and padding-left properties. You can also control it by using one line called Clockwise Notation and placing the four numbers clock-wise (top, right, bottom, left) like this: padding: 10px 20px 10px 20px;
-margin controls the amount of space between an element’s border and the surrounding elements. If you set the element’s margin to a negative value the element will grow larger. You can control the margin on all four individual sides with the margin-top, margin-right, margin-bottom, and margin-left properties. The same Clockwise Notation works with margin as with padding
-Use attribute selectors to style elements
-We’ve been using id or class attributes to style elements. However there are other ways to style things. LIke [attr=value] to style a checkbox. 
- [type='checkbox'] {
-   margin-top: 10px;
-   margin-bottom: 15px;
- }
-Style
-Absolute vs Relative Units
-Absolute: px = pixels, in = inches, mm = millimeters
-Relative: em or rem are relative to another length value. For example if you use it to set the font-size property itself, it’s relative to the parent’s font-size.
-You’ll learn more about relative unit options that are tied to the viewport in the Responsive Web Design Principles. 
-Style the HTML Body Element
-Every HTML page has a body element. You can style the whole thing with by using it like this:
-body {
-  background-color: black;
-  Font-family: helvetica;
-}
-Prioritize One Style Over Another
-A class can override a body style
-If more than one class applies to an element, then the one declared the furthest down in the style sheet will apply, no matter what the order of the class in the element itself. 
-For example: 
-<style>
- .pink-text {
-   color: pink;
- }
- .blue-text {
-   color: blue;
- }
-</style>
-<h1 class="blue-text pink-text">Hello World!</h1>
-This will always come out as BLUE because the .blue-text comes second in the style sheet. 
-HOWEVER an id attribute will supercede a class. Even if they are all applied in the same line. 
-Next an inline style will ultimately override everything. 
-<h1 style="color: green">.
-You can add !important which will override all of this. 
-This is useful because sometimes you’ll use exterior CSS libraries which might override your CSS. You’ll want to make sure something happens, so use !important. It will look like this: 
-.pink-text {
-   color: pink !important;
-}
-Colors
-Using Hex Codes for Specific Colors
-Use Hex codes for any specific color anywhere that you’ve previously written a color. 
-#000000 ← Black 
-You can also use “Abbreviated Hex Code” 
-This limits one digit to R, G, and B. So for Red the hex code is #FF0000 but the abbreviated is #F00 which is the exact same color. The only difference is less code and less options instead of 16million hex colors there are only 4000 abbreviated hex codes. 
-RGB Values to Color Elements
-You can also use RGB which instead of mixing specifies a brightness of R G and B. It would look like this in the style sheet:
-body {
-  background-color: rgb(255, 165, 0);
-}
-Use CSS Variables 
-...to change several elements at once
-CSS Variables allow you to change many CSS style properties at once
-Create a CSS Variable
-Give it a name and two dashes in front of it and assign it a value like this: --penguin-skin: gray;
-Doing this will create a variable named penguin skin and give it the value gray. 
-Use a Custom CSS Variable
-Apply the variable by calling the name that you gave it in the example above you’d put var(--penguin-skin)
-Attach a fallback value to a CSS Variable
-Works similarly to the fallback on fonts, using the same example as before it would.
-background: var(--penguin-skin, black);
-Specifically this will be helpful in debugging, by putting a weird value in the fallback case.
-Cascading CSS variables
-When a variable is created, it becomes available inside the element in which you create it, but it is also available in any elements nested within it. This is called “cascading.” 
-Because of this cascading principle, CSS variables are often defined in the :root element. 
-The :root element is like a container for the entire HTML document. In the same way an html element a container for the body element. 
-By creating variables in :root, they will be available throughout the whole web page. 
-The same principles of prioritization used in style apply here as well. You can override the prioritization by adding lower in the code. 
-Using a media query: (Mozilla Devs Media Queries) 
-Using CSS variables can simplify media queries. For example if your screen is smaller or larger than your media query breakpoint, you can change the value of a variable and it will apply its style whenever its used. 
-Basically this can apply a specific sizing restraints when needed. 
+  }```
+
+- Make an image circular with border-radius by using a percentage. 
+  - Same as above, with a small exception: ```border-radius: 50%;```
+- Give a background color to a div element
+  - Set an element’s background color with the ```background-color``` property.
+- For example:
+  ```css
+  .green-background {
+    background-color: green;
+  }
+  ```
+
+- Set the id of an element
+  - In addition to classes, each HTML element can also have an id attribute. 
+  - Benefits of id attributes.
+  - Use an id to style a single element and later you’ll find that you can use them to select and modify specific elements with JavaScript.
+  - *id attributes should be unique.* Browsers won’t enforce this, but it is a widely agreed upon best practice. Tl:dr don’t give more than one element the same id attribute. 
+  - Example: ```<h2 id="cat-photo-app">```.
+
+- Use an id attribute to style an element.
+  - Cool thing about id attributes is that you can style them, like classes.
+  - However an id is not reusable and should only be applied to on element. An id also has a higher specificity (importance) than a class so if both are applied to the same element and have conflicting styles, the id attribute will be applied. 
+  - *Tl:dr id attribute override classes that also apply.*
+  - Classes are always references with the ```.``` before it, an id attribute similarly always has a ```#```
+
+- Padding, Margins and Borders
+  - Padding: controls the amount of space between the elements content and its border.
+  - You can control four individual sides padding with the padding-top, padding-right, padding-bottom, and padding-left properties. You can also control it by using one line called Clockwise Notation and placing the four numbers clock-wise (top, right, bottom, left) like this: ```padding: 10px 20px 10px 20px;```
+  - Margin controls the amount of space between an element’s border and the surrounding elements. If you set the element’s margin to a negative value the element will grow larger. You can control the margin on all four individual sides with the margin-top, margin-right, margin-bottom, and margin-left properties. The same Clockwise Notation works with margin as with padding
+
+- Use attribute selectors to style elements
+  - We’ve been using id or class attributes to style elements. However there are other ways to style things. Like ```[attr=value]``` to style a checkbox.
+  ``` css
+  [type='checkbox'] {
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+  ```
+
+- *Style*
+- Absolute vs Relative Units
+  - Absolute: px = pixels, in = inches, mm = millimeters
+  - Relative: em or rem are relative to another length value. For example if you use it to set the font-size property itself, it’s relative to the parent’s font-size.
+
+- Style the HTML Body Element
+  - Every HTML page has a ```body``` element. You can style the whole thing with by using it like this:
+  ```css
+  body {
+    background-color: black;
+    Font-family: helvetica;
+  }
+  ```
+
+- Prioritize One Style Over Another
+  - A class can override a body style
+  - If more than one class applies to an element, then the one declared the furthest down in the style sheet will apply, no matter what the order of the class in the element itself.
+  - For example:
+
+  ```html
+  <style>
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+  </style>
+  <h1 class="blue-text pink-text">Hello World!</h1>
+  ```
+  - This will always come out as BLUE because the .blue-text comes second in the style sheet. 
+  HOWEVER an id attribute will supercede a class. Even if they are all applied in the same line. 
+  Next an inline style will ultimately override everything.
+  ```html
+  <h1 style="color: green">.
+  ```
+  - You can add ```!important``` which will override all of this.
+  - This is useful because sometimes you’ll use exterior CSS libraries which might override your CSS. You’ll want to make sure something happens, so use !important. It will look like this:
+  ```css
+  .pink-text {
+    color: pink !important;
+  }
+  ```
+
+- Colors
+  - Using Hex Codes for Specific Colors
+    - Use Hex codes for any specific color anywhere that you’ve previously written a color.
+    - ``#000000`` ← Black
+  - You can also use “Abbreviated Hex Code”
+    - This limits one digit to R, G, and B. So for Red the hex code is #FF0000 but the abbreviated is #F00 which is the exact same color. The only difference is less code and less options instead of 16million hex colors there are only 4000 abbreviated hex codes.
+- RGB Values to Color Elements
+  - You can also use RGB which instead of mixing specifies a brightness of R G and B. It would look like this in the style sheet:
+  ```css
+  body {
+    background-color: rgb(255, 165, 0);
+  }
+  ```
+
+- Use CSS Variables
+  - ...to change several elements at once
+  - CSS Variables allow you to change many CSS style properties at once
+  - Create a CSS Variable
+    - Give it a name and two dashes in front of it and assign it a value like this: ```--penguin-skin: gray;```
+    Doing this will create a variable named penguin skin and give it the value gray. 
+  - Use a Custom CSS Variable
+  - Apply the variable by calling the name that you gave it in the example above you’d put ```var(--penguin-skin)```
+
+- Attach a fallback value to a CSS Variable
+  - Works similarly to the fallback on fonts, using the same example as before it would. ```background: var(--penguin-skin, black);```
+  - Specifically this will be helpful in debugging, by putting a weird value in the fallback case.
+
+- Cascading CSS variables
+  - When a variable is created, it becomes available inside the element in which you create it, but it is also available in any elements nested within it. This is called “cascading.” 
+  - Because of this cascading principle, CSS variables are often defined in the ```:root``` element.
+  - The ```:root``` element is like a container for the entire HTML document. In the same way an html element a container for the body element.
+  - By creating variables in ```:root```, they will be available throughout the whole web page.
+  - The same principles of prioritization used in style apply here as well. You can override the prioritization by adding lower in the code.
+
+- Using a media query: (Mozilla Devs Media Queries)
+  - Using CSS variables can simplify media queries. For example if your screen is smaller or larger than your media query breakpoint, you can change the value of a variable and it will apply its style whenever its used.
+  - Basically this can apply a specific sizing restraints when needed.
 
 ## Applied Visual Design
 HTML gives structure and semantics to a page’s content. CSSS controls the layout and appearance of it. 
@@ -482,46 +541,71 @@ X-axis only accepts values 0-1, but y-axis can accept larger values.
 
 ## Applied Accessibility
 
-General Principles of Applied Accessibility
-Well-organized code that uses appropriate markup
-Ensure text alternatives exist for non-text and visual content
-Create an easily-navigated page that’s keyboard friendly
-W3’s Web Content Accessibility Guidelines (WCAG): These are the standards for Web Accessibility 
-Add a text alternative to images for impaired accessibility
-Alt text is also useful for SEO in addition to helping the visually impaired. 
-<img src=”link” alt=”description of text”>
-Sometimes the alt text needs to be left blank. But only if the photo is described elsewhere OR only there for decoration. 
-Background images don’t count, as they are only decorations, and have CSS rules applied to them. 
-If the CSS needs to be blank, it still has to be included but its <img src=”link” alt=””>
-Heading Elements:
-They EACH correspond to a level of heading or sub-heading. Don’t just choose a header type because it looks good in the browser. Pick the appropriate one and edit its CSS. 
-H1: there should only ever be one H1 element in your page. 
-Specific Elements and Tags
-Main Element: is used to wrap the “main” content of the page. Its meant to be for the central topic of the page, and NOT items that are repeated, like navbars or footers. And it can also be used specifically with assistive technology that can “jump to main content” 
-Article Element: useful for blogs, forums, and news articles. You can determine by asking: if you removed all the surrounding context would that content still make sense. Groups independent, self-contained content. 
-<div> groups content
-<section> - groups related content. 
-Header Tag: it is used to wrap introductory information or navigation links for its parent tag. It words well with content repeated on multiple pages. 
-Note: <header> is different than <head> . <head> is for title, meta info, etc…
-Nav Element: This tag is meant to wrap around the main navigation links in your page. 
-Footer Element: primarily used to contain copyright info or links to related docs that normally sit at the bottom of the page. 
-Audio Element: used to add audio. The controls attribute brings up the default play/pause controls. 
-Example: <audio controls> <source src=”link” type=”audio/file-type” </audio>
-Figure Element: figure and figcaption when used together, these items wrap a visual representation (like an image, diagram or chart) along with its caption. 
-Label tag: the label tag wraps text for a specific form control item, usually the name or label for a choice. This ties meaning to the item and makes the form more readable. The for attribute on a label tag explicitly associates that label with the form control and is used by screen readers. The value of the for attribute must be the same as the value of the id attribute of the form control. 
-Fieldset and Legend tags: 
-<fieldset> is a wrapper for radio buttons. It uses the <legend> tag to provide a description for the grouping. Neither of these are necessary for self-explanatory options. 
-Date input type: much like the text and submit input types, the type=”date” available  in HTML5 allows for a date picker. 
-datetime attribute: put it inside the opening <time> tag with datetime=”20xx-MM-DD”
-Custom CSS for only Screen Readers: so far, none of the applied accessibility challenges have used CSS, that’s just to show that you need good logical tags and formatting. Here’s an example:
-.sr-only {
-  position: absolute;
-  left: -10000px;
-  width: 1px;
-  height: 1px;
-  top: auto;
-  overflow: hidden;
-}
+- General Principles of Applied Accessibility
+  - Well-organized code that uses appropriate markup
+  - Ensure text alternatives exist for non-text and visual content
+  - Create an easily-navigated page that’s keyboard friendly
+  - W3’s Web Content Accessibility Guidelines (WCAG): These are the standards for Web Accessibility
+
+- Add a text alternative to images for impaired accessibility
+  - Alt text is also useful for SEO in addition to helping the visually impaired.
+  ```html
+  <img src=”link” alt=”description of text”>
+  ```
+  - Sometimes the alt text needs to be left blank. But only if the photo is described elsewhere OR only there for decoration.
+  - Background images don’t count, as they are only decorations, and have CSS rules applied to them. 
+  - If the CSS needs to be blank, it still has to be included but its <img src=”link” alt=””>
+
+- Heading Elements:
+  - They EACH correspond to a level of heading or sub-heading. Don’t just choose a header type because it looks good in the browser. Pick the appropriate one and edit its CSS.
+  - H1: there should only ever be one H1 element in your page.
+
+- Specific Elements and Tags
+  - Main Element: is used to wrap the “main” content of the page. Its meant to be for the central topic of the page, and NOT items that are repeated, like navbars or footers. And it can also be used specifically with assistive technology that can “jump to main content”
+  - Article Element: useful for blogs, forums, and news articles. You can determine by asking: if you removed all the surrounding context would that content still make sense. Groups independent, self-contained content.
+  - ```<div>``` groups content
+  - ```<section>``` - groups related content. 
+  - ```<header>``` Tag: it is used to wrap introductory information or navigation links for its parent tag. It words well with content repeated on multiple pages.
+    - Note: ```<header>``` is different than ```<head>```. ```<head>``` is for title, meta info, etc…
+  - ```<nav>``` Element: This tag is meant to wrap around the main navigation links in your page.
+  - ```<footer>``` Element: primarily used to contain copyright info or links to related docs that normally sit at the bottom of the page.
+  - ```<audio>``` Element: used to add audio. The controls attribute brings up the default play/pause controls.
+    - Example:
+    ```html
+    <audio controls> <source src=”link” type=”audio/file-type” </audio>
+    ```
+- Figure Element: ```figure``` and ```figcaption``` when used together, these items wrap a visual representation (like an image, diagram or chart) along with its caption.
+- Label tag: the ```label``` tag wraps text for a specific form control item, usually the name or label for a choice. This ties meaning to the item and makes the form more readable. The for attribute on a label tag explicitly associates that label with the form control and is used by screen readers. The value of the for attribute must be the same as the value of the id attribute of the form control.
+- Fieldset and Legend tags:
+  - ```<fieldset>``` is a wrapper for radio buttons. It uses the ```<legend>``` tag to provide a description for the grouping. Neither of these are necessary for self-explanatory options.
+- Date input type: much like the text and submit input types, the ```type=”date”``` available in HTML5 allows for a date picker.
+  - ```datetime``` attribute: put it inside the opening ```<time>``` tag with ```datetime=”20xx-MM-DD”```
+  - Custom CSS for only Screen Readers: so far, none of the applied accessibility challenges have used CSS, that’s just to show that you need good logical tags and formatting. Here’s an example:
+```css
+  .sr-only {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+  }
+  ```
+- Improve Readiblity with High Contrast Text
+  - WCAG recommends at least a 4.5 to 1 contrast ration for normal text. 1:1 is no contrast which is the same color. 21:1 is white against black whic is the most contrast.
+- Avoid Colorblindness issues with contrast
+  - The same 4.5:1 rule applies to color. 
+- Give Links meaning by using descriptive link text.
+  - This is useful, because "click here" buttons have no meaning for visually impaired, so instead describe what the click will do. "click here for information about cats"
+- ```accesskey``` attribute:
+  - this attribute allows for a shortcut key to be applied to any HTML element, but it's particularly useful for interative ones like links and buttons.
+  - declare like so:
+  ```html
+  <a accesskey="a" href="">Learn about Andy!</a>
+  ```
+- Use ```tabindex``` to add keyboard focus to an element.
+  - The ```tabindex``` has three distinct functions relating to an elements keyboard focus. For example, if you have a form, you may want to force the user to focus on the instructions first by adding a ```<p tabindex="0">Instructions:...</p>``` Instead of allowing the user to go straight to the form. You can also continue on to force the user to a specific set of places by incrementing the ```tabindex="#"``` this overides the HTML source.
+
 
 ## Responsive Web Design Principles
 
