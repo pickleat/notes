@@ -647,6 +647,32 @@ X-axis only accepts values 0-1, but y-axis can accept larger values.
 
 ## CSS Flexbox
 
+- Website UI has two components:
+  1. Visual Elements: colors, fonts, elements.
+  2. Placement or positioning of those elements.
+  - In Responsive Web Design, UI must accommodate many different browsers and devices.
+- Flexbox was introduced in CSS3 to create page layouts for a dynamic UI. It is a layout mode that arranges elements in a predictable way for different screensizes.
+- Applying ```display: flex;``` to an element allows you to use other flex properties to build a responsive page.
+- Adding ```display: flex;``` turns it into a flex container. This makes it possible to align any child element into rows or columns with ```flex: direction;``` then adding either ```row``` or ```column```. You can also add ```row-reverse``` or ```column-reverse```.
+- ```justify-content: ``` is a way to organize items in a flex-container.
+  - ```center```: centers the items together.
+  - ```flex-start```: aligns the items to start of the container.
+  - ```flex-end```: aligns items to the end container. For a row this would be to the right, for a column it would push to the bottom.
+  - ```space-between```: aligns items to the center of the main axis.
+  - ```space-around```: similar to space-between but the first and last items aren't locked to the edges the space is distributed around all the items equally.
+- ```align-items:``` is a property is similar to ```justify-content:```, however instead of aligning on the main axis, it aligns on the *cross-axis*. Values include:
+  - ```flex-start```: aligns items to the start of the container.
+  - ```flex-end```: aligns items to the end of the flex container.
+  - ```center```: aligns items to the center.
+  - ```stretch```: stretch the items to fill the flex container.
+  - ```baseline```: aligns items to their baselines. Baseline is a text concept, think of it as the line that the letters sit on.
+- ```flex-wrap```: By default a flex container will fit all items together, but the ```flex-wrap``` property allows you to wrap items. Options for it include:
+  - ```nowrap```: this is default, and does not wrap items.
+  - ```wrap```: wraps items from left-to-right (row) or top-to-bottom (column)
+  - ```wrap-reverse```: wraps items opposite to ```wrap```
+- ```flex-shrink```: 
+
+
 ## CSS Grid
 
 - First Grid
