@@ -670,7 +670,21 @@ X-axis only accepts values 0-1, but y-axis can accept larger values.
   - ```nowrap```: this is default, and does not wrap items.
   - ```wrap```: wraps items from left-to-right (row) or top-to-bottom (column)
   - ```wrap-reverse```: wraps items opposite to ```wrap```
-- ```flex-shrink```: 
+- ```flex-shrink```: is a property that applies to flex items. It allows you to alter them, and choose how much space they take up.
+- ```flex-grow```: works opposite to ```flex-shrink```, and makes items larger.
+- ```flex-basis```: specifies the initial size of the item before CSS makes adjustments with ```flex-shrink``` or ```flex-grow```. It uses normal ```px```, ```em```, ```%```, etc values. You can also use ```auto``` which sizes items based on content.
+- You can use a shorcut to set several flex properties at once. Using a simple ```flex``` property. It goes in order of ```flex-grow```, ```flex-shrink```, ```flex-basis```. For example these two CSS declarations are the same:
+  ```css
+  flex: 0 1 auto;
+  ```
+  ```css
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis auto;
+  ```
+- the ```order``` property allows you to specify the order of flex items. Otherwise it defaults to where they show up in the HTML. It accepts positive integers as values.
+- ```align-self``` is a property that allows you to adjust each item individually. It accepts all the same values as ```align-items``` and will override any value from ```align-items```
+
 
 
 ## CSS Grid
