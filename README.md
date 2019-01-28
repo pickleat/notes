@@ -21,7 +21,7 @@ This keeps track of all the progress and notes on the classes I take. Because th
 - [52/52] Applied Visual Design
 - [22/22] Applied Accessibility
 - [4/4] Responsive Web Design Principles
-- [11/17] CSS Flexbox
+- [17/17] CSS Flexbox
 - [22/22] CSS Grid
 - [2/5] Responsive Web Design Projects
 
